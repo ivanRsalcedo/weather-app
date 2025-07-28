@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack Template</title>
+    <title>Weather App</title>
 </head>
+
 <body>
-    
+    <form id="weather-form">
+        <p id="result">...</h1>
+
+        <div id="inputs">
+            <div id="temps">
+                <label><input type="radio" name="unit" value="us" checked> °F</label>
+                <label><input type="radio" name="unit" value="metric" checked> °C</label>
+            </div>
+            <input type="text" name="city" placeholder="city" required>
+            <button type="submit">go</button>
+        </div>
+    </form>
 </body>
+
 </html>

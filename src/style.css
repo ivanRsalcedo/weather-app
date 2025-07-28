@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ddd;
+    background-color: #111;
+}
+
+#result {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+#weather-form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputs {
+    position: fixed;
+    bottom: 15vh;
+}
+
+#temps {
+    display: flex;
+    gap: 1rem;
+}
