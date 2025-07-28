@@ -11,8 +11,9 @@ body {
 }
 
 #result {
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 700;
+    text-align: center;
 }
 
 #weather-form {
@@ -31,4 +32,8 @@ body {
 #temps {
     display: flex;
     gap: 1rem;
+}
+
+#city {
+    font-size: 2rem;
 }
