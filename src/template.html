@@ -18,9 +18,12 @@
                 <label><input type="radio" name="unit" value="us" checked> °F</label>
                 <label><input type="radio" name="unit" value="metric"> °C</label>
             </div>
-            <input type="text" name="city" placeholder="city" minlength="2" required>
-            <button type="submit">go</button>
+            <div>
+                <input type="text" name="city" placeholder="city" autocomplete="off">
+                <button type="submit">go</button>
+            </div>
         </div>
+        <p id="error"></p>
     </form>
 </body>
 

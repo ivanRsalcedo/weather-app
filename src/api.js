@@ -5,7 +5,6 @@ export async function fetchWeather(city, unit) {
     try {
         const fetched = await fetch(URL, { mode: 'cors' });
         const fullData = await fetched.json();
-        console.log(fullData);
         return {
             city: fullData.resolvedAddress.split(',')[0].toLowerCase(),
             temperature: fullData.days[0].temp,
@@ -13,7 +12,7 @@ export async function fetchWeather(city, unit) {
             high: fullData.days[0].tempmax,
         }
     } catch (err) {
-        console.error(err);
+        console.error(`Couldn't fetch data:\n\n${err}`);
         return null;
     }
     

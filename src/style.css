@@ -27,13 +27,33 @@ body {
 #inputs {
     position: fixed;
     bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+input[type=text],
+button {
+    text-align: center;
+    padding: .1rem .8rem;
 }
 
 #temps {
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
 #city {
     font-size: 2rem;
+}
+
+#error {
+    min-height: 1.2em;
+    color: red;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 10vh;
 }
